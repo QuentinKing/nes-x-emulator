@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{3c4e475d-bf50-405e-a644-53be9482f71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Public">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source\Private">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resources\Icons">
+      <UniqueIdentifier>{124e9eb3-5d3f-4f82-9f13-ed425823bcd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{a958e1b4-1a62-410f-a0f6-ce86061d900a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Private\NesEmulation">
+      <UniqueIdentifier>{bf71cc71-1173-4603-8b17-49dc82319b82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\WinMain.cpp">
+      <Filter>Source\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\WindowsMessageMap.cpp">
+      <Filter>Source\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Window.cpp">
+      <Filter>Source\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\InputState.cpp">
+      <Filter>Source\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\DirectXManager.cpp">
+      <Filter>Source\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CPU.cpp">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameCartridge.cpp">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NES.cpp">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PPU.cpp">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WindowsMessageMap.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\WindowsWrapper.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Window.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MessageListener.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\InputState.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DebugListener.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\DirectXManager.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ShaderStructs.h">
+      <Filter>Source\Private</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CPU.h">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameCartridge.h">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\NES.h">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\PPU.h">
+      <Filter>Source\Private\NesEmulation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NesXEmulator.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Content\nintendo_nes.ico">
+      <Filter>Resources\Icons</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\VertShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\FragShader.hlsl">
+      <Filter>Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
